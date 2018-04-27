@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.timingdiagram"
+		description="Create Timing Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.timingdiagram.TimingDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.timingdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.timingdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.timingdiagram.actionset1.TimingDiagramActionControl"
+					actionType="generalAction"
+					label="Timing Diagram"
+					tooltip="Create Timing Diagram"
+					style="normal"
+          icon="icons/timing.png"
+					toolbarPath="com.vp.plugin.sample.timingdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.timingdiagram.actions.TimingDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
